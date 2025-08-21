@@ -14,7 +14,7 @@ From a single photo–sketch pair per identity (augmented through strong sketch 
 
 ---
 
-## Repository structure (focused scripts)
+## Repository structure
 
 - `train.py`: Train the sketch encoder branch to match ArcFace on unaligned sketches. Single-pair-per-identity supervision; EMA teacher; progressive backbone unfreezing. Saves checkpoints and TensorBoard logs.
 - `test_model.py`: Encode a sketch and retrieve nearest photos from a directory of real faces using ArcFace. Also saves the sketch embedding to `sketch_embedding.npy`.
@@ -326,6 +326,7 @@ If you use this repository in academic work, please cite the above projects acco
 ## License
 
 This repository is provided for research purposes. Check the licenses of the third-party models and datasets you use (InsightFace, OpenCLIP, diffusion models, IP-Adapter weights, etc.).
+
 
 
 
