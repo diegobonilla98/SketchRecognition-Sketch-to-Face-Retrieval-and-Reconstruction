@@ -10,6 +10,8 @@ From a single photo–sketch pair per identity (augmented through strong sketch 
 - **Robust training**: Mean-teacher EMA, progressive unfreezing, sampled ArcFace softmax with semi-hard negatives, CORAL distribution alignment, and direct prototype regression.
 - **Generative visualization**: Use the sketch embedding with IP-Adapter (FaceID / FaceID Plus) to reconstruct and explore disguise variations.
 
+![](./Figure_1.png)
+
 ---
 
 ## Repository structure (focused scripts)
@@ -318,5 +320,6 @@ If you use this repository in academic work, please cite the above projects acco
 ## License
 
 This repository is provided for research purposes. Check the licenses of the third-party models and datasets you use (InsightFace, OpenCLIP, diffusion models, IP-Adapter weights, etc.).
+
 
 
