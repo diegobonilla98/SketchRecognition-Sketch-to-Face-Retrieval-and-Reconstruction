@@ -179,7 +179,7 @@ What it does:
 
 ## Photorealistic reconstruction (`FaceID.py`)
 
-![](./variations.png)
+![](./assets/variations.png)
 
 Purpose:
 - Use the identity-preserving sketch embedding with IP-Adapter FaceID to synthesize photorealistic candidate faces.
@@ -326,6 +326,7 @@ If you use this repository in academic work, please cite the above projects acco
 ## License
 
 This repository is provided for research purposes. Check the licenses of the third-party models and datasets you use (InsightFace, OpenCLIP, diffusion models, IP-Adapter weights, etc.).
+
 
 
 
