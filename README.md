@@ -1,5 +1,7 @@
 ## SketchRecognition: Sketch-to-Face Retrieval and Reconstruction
 
+![](./assets/header.png)
+
 SketchRecognition is a sketch-to-face recognition and reconstruction system that bridges forensic sketches with standard face recognition pipelines. It trains a dedicated sketch encoder that maps sketches into the ArcFace embedding space while keeping ArcFace unchanged. As a result, you can query any existing ArcFace face database directly with a sketch—no re-indexing required.
 
 From a single photo–sketch pair per identity (augmented through strong sketch transforms), the model learns to align sketches and photos in the same space, enabling sketch-based retrieval of suspects. Beyond retrieval, the sketch embedding can drive generative models (IP-Adapter + diffusion) to reconstruct photorealistic candidate faces and explore possible disguises (hoodie, sunglasses, bald, beard, aging).
@@ -74,6 +76,8 @@ The training and evaluation pipelines assume this exact model to maintain embedd
 
 ## Training the sketch encoder (`train.py`)
 
+![](./assets/training.png)
+
 Run:
 
 ```bash
@@ -145,6 +149,8 @@ tensorboard --logdir runs/sketch2arcfacev2
 
 ## Retrieval and embedding export (`test_model.py`)
 
+![](./assets/retrieval.png)
+
 Purpose:
 - Load the finetuned sketch encoder, encode a query sketch, and retrieve the most similar faces from a folder of real photos (embedded with ArcFace).
 - Save the sketch embedding to `sketch_embedding.npy` for downstream generation.
@@ -172,6 +178,8 @@ What it does:
 ---
 
 ## Photorealistic reconstruction (`FaceID.py`)
+
+![](./variations.png)
 
 Purpose:
 - Use the identity-preserving sketch embedding with IP-Adapter FaceID to synthesize photorealistic candidate faces.
@@ -318,6 +326,7 @@ If you use this repository in academic work, please cite the above projects acco
 ## License
 
 This repository is provided for research purposes. Check the licenses of the third-party models and datasets you use (InsightFace, OpenCLIP, diffusion models, IP-Adapter weights, etc.).
+
 
 
 
