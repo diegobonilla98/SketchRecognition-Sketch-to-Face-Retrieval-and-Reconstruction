@@ -323,10 +323,14 @@ If you use this repository in academic work, please cite the above projects acco
 
 ---
 
-## License
-
-This repository is provided for research purposes. Check the licenses of the third-party models and datasets you use (InsightFace, OpenCLIP, diffusion models, IP-Adapter weights, etc.).
-
+```
+@misc{bonilla2025sketchrecogonition,
+  title  = {SketchRecognition-Sketch-to-Face-Retrieval-and-Reconstruction},
+  author = {Bonilla Salvador, Diego},
+  year   = {2025},
+  url    = {https://github.com/diegobonilla98/SketchRecognition-Sketch-to-Face-Retrieval-and-Reconstruction}
+}
+```
 
 
 
